@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: 'Alata', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   position: relative;
 }
 
@@ -48,7 +48,6 @@ ul {
 
 .subheading {
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
   font-size: 3rem;
   font-weight: 300;
   color: var(--very-dark-gray);
@@ -67,7 +66,6 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60rem;
-
 }
 
 .logo-link img {
@@ -107,11 +105,14 @@ ul {
   =================== */
 
 .hero-section {
-  height: 60rem;
   position: absolute;
-  top: 22%;
+  top: 7%;
   left: 0;
-  transform: translateY(-22%);
+}
+
+.hero-section>div {
+  margin-bottom: 0;
+
 }
 
 .hero-title {
@@ -130,6 +131,7 @@ ul {
   =================== */
 
 article {
+  grid-template-columns: 1fr;
   gap: 3rem;
 }
 
@@ -147,6 +149,8 @@ article {
 
 .about-section__text {
   font-size: 1.5rem;
+  font-family: 'Alata', sans-serif;
+  font-weight: 100;
   color: var(--dark-gray);
   line-height: 1.7;
 }
@@ -155,29 +159,81 @@ article {
     CREATIONS SECTION
   =================== */
 
-.creations-section {}
+/* .creations-section>div:first-child {
+  margin-bottom: 4rem;
+} */
 
 .creations-items {
+  margin-top: 3.5rem;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
 .creation-item {
   position: relative;
+  height: 12rem;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent)
 }
 
 .creation-item img {
   position: absolute;
   width: 100%;
+  z-index: -1;
+
 }
 
 .creation-item__title {
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+  font-weight: 300;
   text-transform: uppercase;
+  padding: 2rem;
+}
+
+.creation-btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.creation-btn__link {
+  display: inline-block;
+  font-family: 'Alata';
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  border: 2px solid black;
 }
 
 /* ==================
     FOOTER
   =================== */
+
+.footer {
+  padding: 5rem;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-link {
+  text-align: center;
+}
+
+.footer-nav {}
+
+.footer-nav-link {}
+
+.social-links {}
+
+.social-icon {}
+
+.footer-copyright {}
+
+
 
 .attribution {
   font-size: 11px;
