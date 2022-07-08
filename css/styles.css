@@ -65,6 +65,7 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60rem;
+  margin-bottom: 8rem;
 }
 
 .header-hero {
@@ -73,22 +74,47 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  position: relative;
 }
 
 .logo-link img {
   width: 75%;
 }
 
-.main-nav {}
-
-.nav-items {
-  display: none;
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .4s;
 }
 
-.nav-item {}
+.nav-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4rem 0 0 2.5rem;
+}
+
+.nav-items {
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
 
 .nav-link:link,
 .nav-link:visited {
+  font-size: 3rem;
+  text-transform: uppercase;
   color: white;
 }
 
@@ -102,10 +128,9 @@ ul {
   background: none;
 }
 
-.open-mobile-menu {}
-
 .close-mobile-menu {
-  display: none;
+  align-self: flex-start;
+  padding: 4rem 2.5rem 0 0;
 }
 
 /* ==================
@@ -175,35 +200,35 @@ article {
 }
 
 .creation-item-one {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-deep-earth.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-deep-earth.jpg);
 }
 
 .creation-item-two {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-night-arcade.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-night-arcade.jpg);
 }
 
 .creation-item-three {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-soccer-team.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-soccer-team.jpg);
 }
 
 .creation-item-four {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-grid.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-grid.jpg);
 }
 
 .creation-item-five {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-from-above.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-from-above.jpg);
 }
 
 .creation-item-six {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-pocket-borealis.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-pocket-borealis.jpg);
 }
 
 .creation-item-seven {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-curiosity.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-curiosity.jpg);
 }
 
 .creation-item-eight {
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(/images/mobile/image-fisheye.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent), url(/images/mobile/image-fisheye.jpg);
 }
 
 .creation-item {
@@ -211,10 +236,8 @@ article {
   height: 12rem;
   display: flex;
   align-items: flex-end;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent)
+  background-size: cover;
 }
-
-
 
 .creation-item__title {
   color: rgb(255, 255, 255);
@@ -258,6 +281,10 @@ article {
   justify-items: center;
 }
 
+.footer .logo-link {
+  text-align: center;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -288,6 +315,7 @@ article {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1rem;
 }
 
 .attribution a {
@@ -307,7 +335,8 @@ article {
 
   .header {
     background:
-      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      linear-gradient(rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)),
       url(/images/desktop/image-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -367,9 +396,9 @@ article {
 
   .hero-section {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
   }
 
   .hero-title {
