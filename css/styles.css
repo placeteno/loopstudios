@@ -1,0 +1,189 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+- Font size: 15px
+*/
+
+:root {
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+  position: relative;
+}
+
+/* ==================
+    GENERAL STYLES
+  =================== */
+
+.container {
+  padding: 0 2.5rem;
+  margin-bottom: 8rem;
+}
+
+.grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--very-dark-gray);
+  text-align: center;
+}
+
+/* ==================
+    HEADER & NAV
+  =================== */
+
+.header {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60rem;
+
+}
+
+.logo-link img {
+  width: 75%;
+}
+
+.main-nav {}
+
+.nav-items {
+  display: none;
+}
+
+.nav-item {}
+
+.nav-link {
+  color: white;
+}
+
+.nav-icon {
+  width: 3rem;
+  color: white;
+}
+
+.nav-btn {
+  border: none;
+  background: none;
+}
+
+.open-mobile-menu {}
+
+.close-mobile-menu {
+  display: none;
+}
+
+/* ==================
+    HERO SECTION
+  =================== */
+
+.hero-section {
+  height: 60rem;
+  position: absolute;
+  top: 22%;
+  left: 0;
+  transform: translateY(-22%);
+}
+
+.hero-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: white;
+  border: 2px solid white;
+  padding: 2rem;
+}
+
+/* ==================
+    ABOUT SECTION
+  =================== */
+
+article {
+  gap: 3rem;
+}
+
+.about-section__img img {
+  width: 100%;
+}
+
+.about-section__textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-section__text {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+  line-height: 1.7;
+}
+
+/* ==================
+    CREATIONS SECTION
+  =================== */
+
+.creations-section {}
+
+.creations-items {
+  gap: 2rem;
+}
+
+.creation-item {
+  position: relative;
+}
+
+.creation-item img {
+  position: absolute;
+  width: 100%;
+}
+
+.creation-item__title {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* ==================
+    FOOTER
+  =================== */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

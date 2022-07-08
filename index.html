@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,29 +12,19 @@
     />
 
     <title>Frontend Mentor | Loopstudios landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      html {
-        font-size: 62.5%;
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
-      .nav-icon {
-        width: 3rem;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="main-logo"><a href="#" class="logo-link">loopstudios</a></div>
+    <header class="header container">
+      <a href="#" class="logo-link"
+        ><img src="./images/logo.svg" alt="Main logo"
+      /></a>
       <nav class="main-nav">
         <ul class="nav-items">
           <li class="nav-item"><a href="#" class="nav-link">About</a></li>
@@ -44,7 +33,7 @@
           <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
         </ul>
-        <button type="button" class="open-mobile-menu">
+        <button type="button" class="nav-btn open-mobile-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="nav-icon"
@@ -60,7 +49,7 @@
             />
           </svg>
         </button>
-        <button type="button" class="close-mobile-menu">
+        <button type="button" class="nav-btn close-mobile-menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="nav-icon"
@@ -81,10 +70,13 @@
 
     <main>
       <section class="hero-section">
-        <h1 class="hero-title">Immersive experiences that deliver</h1>
+        <div class="container">
+          <h1 class="hero-title">Immersive experiences that <br />deliver</h1>
+        </div>
       </section>
+
       <section class="about-section">
-        <article class="container">
+        <article class="container grid">
           <div class="about-section__img">
             <img
               src="/images/mobile/image-interactive.jpg"
@@ -106,9 +98,17 @@
         <h2 class="subheading">Our creations</h2>
         <div class="creations-items container grid">
           <div class="creation-item">
+            <img
+              src="./images/mobile/image-deep-earth.jpg"
+              alt="Planet Earth from Space"
+            />
             <h3 class="creation-item__title">Deep Earth</h3>
           </div>
           <div class="creation-item">
+            <img
+              src="./images/mobile/image-night-arcade.jpg"
+              alt="Planet Earth from Space"
+            />
             <h3 class="creation-item__title">Night Arcade</h3>
           </div>
           <div class="creation-item">
