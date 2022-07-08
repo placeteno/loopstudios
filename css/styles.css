@@ -97,6 +97,11 @@ ul {
   transition: all .4s;
 }
 
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav-logo {
   position: absolute;
   top: 0;
@@ -121,6 +126,7 @@ ul {
 .nav-icon {
   width: 3rem;
   color: white;
+  cursor: pointer;
 }
 
 .nav-btn {
@@ -348,12 +354,56 @@ article {
     padding-top: 5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
   }
 
   .logo-link img {
     width: 100%;
+  }
+
+  .main-nav {
+    position: static;
+    background: none;
+    align-items: flex-start;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-items {
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .nav-icon {
+    width: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    border: none;
+    background: none;
+  }
+
+  .close-mobile-menu {
+    align-self: flex-start;
+    padding: 4rem 2.5rem 0 0;
   }
 
   .nav-items {
